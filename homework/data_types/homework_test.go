@@ -15,7 +15,7 @@ func ToLittleEndian(number uint32) uint32 {
 		(((number) & 0x000000ff) << 24))
 }
 
-func TestSerializationProperties(t *testing.T) {
+func TestСonversion(t *testing.T) {
 	tests := map[string]struct {
 		number uint32
 		result uint32
