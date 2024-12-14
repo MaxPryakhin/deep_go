@@ -20,7 +20,7 @@ func Filter(data []int, action func(int) bool) []int {
 		return nil
 	}
 
-	result := make([]int, 0, len(data))
+	result := make([]int, 0)
 	for _, v := range data {
 		if action(v) {
 			result = append(result, v)
